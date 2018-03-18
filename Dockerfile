@@ -7,7 +7,7 @@ ENV AGENT_VERSION 1:5.1.1-546
 
 # Install the Agent
 RUN echo "deb http://apt.datadoghq.com/ stable main" > /etc/apt/sources.list.d/datadog.list \
- && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C7A7DA52 \
+ && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4B4593018387EEAF \
  && apt-get update \
  && apt-get install -y datadog-agent="${AGENT_VERSION}"
 
